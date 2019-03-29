@@ -1,0 +1,13 @@
+{
+  "name": "card-component",
+  "version": "1.0.0",
+  "description": "React JS responsive card component",
+  "main": "index.jsx",
+  "author": "Joe Fradley",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "styled-components": "^4.2.0"
+  }
+}
