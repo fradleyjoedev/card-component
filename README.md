@@ -13,9 +13,10 @@ The following is a list of the technologies in use for this project.
 
 ## Assumptions
 
-The following is a list of assumtions that I have made during the development of the component
+The following is a list of assumtions that I have made during the development of the component:
 
 * It is a pure React component, so didn't use Typescript.
+* If the component was going to be re-usable the data would be pulled from an API. As I do not have a endpoint with data, I have created dummy data in 'src/data/cardData.json' to pass into the props of the component.
 //TODO Write more here
 
 ## Build - (Local Only)

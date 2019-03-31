@@ -13,11 +13,15 @@ module.exports = {
         query: {
           presets: ['@babel/env', '@babel/react']
         }
+      },
+      { 
+        test: /\.json$/, 
+        loader: 'json-loader' 
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.json']
   },
   devServer: {
     historyApiFallback: true,
