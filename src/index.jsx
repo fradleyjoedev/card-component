@@ -4,5 +4,5 @@ import Card from './components/card';
 import CardData from './data/cardData.json';
 
 ReactDOM.render(
-  <Card />
+  <Card data={CardData} />
   , document.querySelector('.app'));

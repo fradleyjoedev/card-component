@@ -1,4 +1,7 @@
 import React from 'react';
+import TitleBanner from '../titlebanner';
+import CardContainer from './elements/cardContainer';
+import GlobalStyle from '../global/globalStyle';
 
 export default class Card extends React.Component {
   constructor (props) {
@@ -6,10 +9,15 @@ export default class Card extends React.Component {
   }
 
   render() {
+    const { data } = this.props;
+
     return (
       <div>
-        <h1>Card</h1>   
-      </div>    
+        <GlobalStyle />
+        <CardContainer image={data.image}>
+          <TitleBanner data={data.banner}/>
+        </CardContainer> 
+      </div>   
     );
   }
 }
