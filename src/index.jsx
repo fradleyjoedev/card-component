@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Card from './components/card';
 
 ReactDOM.render(
-  <h1>Card</h1>
+  <Card />
   , document.querySelector('.app'));
