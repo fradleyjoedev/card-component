@@ -4,6 +4,19 @@
   "description": "React JS responsive card component",
   "main": "index.jsx",
   "author": "Joe Fradley",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/polyfill": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^6.2.0",
+    "webpack": "^1.12.9", 
+    "webpack-dev-server": "^1.14.0"
+  },
   "dependencies": {
     "lodash": "^4.17.11",
     "react": "16.8.6",
