@@ -25397,7 +25397,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _templateObject3() {
-	  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 2.1rem;\n    width: 80%;\n    padding-left: 1%;\n"]);
+	  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 5.1vw;\n    width: 80%;\n    padding-left: 1%;\n"]);
 
 	  _templateObject3 = function _templateObject3() {
 	    return data;
@@ -25417,7 +25417,7 @@
 	}
 
 	function _templateObject() {
-	  var data = _taggedTemplateLiteral(["\n    position: absolute;\n    bottom: 0;\n    display: flex;\n    align-items: center;\n    width: 100%\n    height: 28%;\n    background: ", ";\n    padding: 1rem;\n    box-sizing: border-box;\n"]);
+	  var data = _taggedTemplateLiteral(["\n    position: absolute;\n    bottom: 0;\n    display: flex;\n    align-items: center;\n    width: 100%\n    height: 28%;\n    background: ", ";\n    padding: 3%;\n    box-sizing: border-box;\n"]);
 
 	  _templateObject = function _templateObject() {
 	    return data;
@@ -29190,7 +29190,7 @@
 	exports.COLOUR_TERTIARY = exports.COLOUR_SECONDARY = exports.COLOUR_PRIMARY = void 0;
 	var COLOUR_PRIMARY = '#ffffff';
 	exports.COLOUR_PRIMARY = COLOUR_PRIMARY;
-	var COLOUR_SECONDARY = '#000000ba';
+	var COLOUR_SECONDARY = 'rgba(0, 0, 0, 0.7)';
 	exports.COLOUR_SECONDARY = COLOUR_SECONDARY;
 	var COLOUR_TERTIARY = '#000000';
 	exports.COLOUR_TERTIARY = COLOUR_TERTIARY;
@@ -29224,7 +29224,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _templateObject2() {
-	  var data = _taggedTemplateLiteral(["\n    display: block;\n"]);
+	  var data = _taggedTemplateLiteral(["\n    display: block;\n    width: 100%;\n    height: auto;\n"]);
 
 	  _templateObject2 = function _templateObject2() {
 	    return data;
