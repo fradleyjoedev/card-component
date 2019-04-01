@@ -1,34 +1,30 @@
+const path = require('path');
+
 module.exports = {
-  entry: ['./src/index.jsx'],
+  mode: "development",
+  entry: './src/index.jsx',
   output: {
-    path: __dirname,
-    publicPath: '/',
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
+        test : /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['@babel/env', '@babel/react']
         }
-      },
-      { 
-        test: /\.json$/, 
-        loader: 'json-loader' 
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json']
+    extensions: ['.js', '.jsx', '.json']
   },
   devServer: {
-    historyApiFallback: true,
     contentBase: './',
-    watchOptions: {
-      aggregateTimeout: 300,
-      poll: 1000
-    }
+    compress: true,
+    port: 8080
   }
 };

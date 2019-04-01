@@ -7,6 +7,7 @@ import GlobalStyle from './components/shared/globalStyle';
 ReactDOM.render(
   <div className='container'>
     <GlobalStyle />
+    <span>heyyy</span>
     <Card data={CardData} />
   </div>
   , document.querySelector('.app'));
