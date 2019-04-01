@@ -59,9 +59,9 @@
 
 	var _card = _interopRequireDefault(__webpack_require__(18));
 
-	var _cardData = _interopRequireDefault(__webpack_require__(37));
+	var _cardData = _interopRequireDefault(__webpack_require__(38));
 
-	var _globalStyle = _interopRequireDefault(__webpack_require__(38));
+	var _globalStyle = _interopRequireDefault(__webpack_require__(39));
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25265,7 +25265,7 @@
 
 	var _titlebanner = _interopRequireDefault(__webpack_require__(19));
 
-	var _cardElements = __webpack_require__(36);
+	var _cardElements = __webpack_require__(37);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25302,9 +25302,10 @@
 	    key: "render",
 	    value: function render() {
 	      var data = this.props.data;
-	      return _react.default.createElement(_cardElements.CardContainer, {
-	        image: data.image
-	      }, _react.default.createElement(_titlebanner.default, {
+	      return _react.default.createElement(_cardElements.CardContainer, null, _react.default.createElement(_cardElements.TileImage, {
+	        src: data.image,
+	        alt: data.banner.heading
+	      }), _react.default.createElement(_titlebanner.default, {
 	        data: data.banner
 	      }));
 	    }
@@ -25391,10 +25392,12 @@
 
 	var _globalColors = __webpack_require__(35);
 
+	var _globalMediaQueries = __webpack_require__(36);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _templateObject3() {
-	  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 5.2vw;\n    width: 80%;\n    padding-left: 2%;\n\n    @media (min-width: 768px) {\n        font-size: 3.2vw;\n    }\n"]);
+	  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 2.1rem;\n    width: 80%;\n    padding-left: 1%;\n"]);
 
 	  _templateObject3 = function _templateObject3() {
 	    return data;
@@ -25414,7 +25417,7 @@
 	}
 
 	function _templateObject() {
-	  var data = _taggedTemplateLiteral(["\n    display: flex;\n    align-items: center;\n    width: 100%\n    height: 20%;\n    background: ", ";\n    padding: 2% 1%;\n"]);
+	  var data = _taggedTemplateLiteral(["\n    position: absolute;\n    bottom: 0;\n    display: flex;\n    align-items: center;\n    width: 100%\n    height: 28%;\n    background: ", ";\n    padding: 1rem;\n    box-sizing: border-box;\n"]);
 
 	  _templateObject = function _templateObject() {
 	    return data;
@@ -29184,14 +29187,29 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.COLOUR_SECONDARY = exports.COLOUR_PRIMARY = void 0;
+	exports.COLOUR_TERTIARY = exports.COLOUR_SECONDARY = exports.COLOUR_PRIMARY = void 0;
 	var COLOUR_PRIMARY = '#ffffff';
 	exports.COLOUR_PRIMARY = COLOUR_PRIMARY;
 	var COLOUR_SECONDARY = '#000000ba';
 	exports.COLOUR_SECONDARY = COLOUR_SECONDARY;
+	var COLOUR_TERTIARY = '#000000';
+	exports.COLOUR_TERTIARY = COLOUR_TERTIARY;
 
 /***/ }),
 /* 36 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.MEDIAQUERY_TABLET = void 0;
+	var MEDIAQUERY_TABLET = '768px';
+	exports.MEDIAQUERY_TABLET = MEDIAQUERY_TABLET;
+
+/***/ }),
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29199,14 +29217,24 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.CardContainer = void 0;
+	exports.TileImage = exports.CardContainer = void 0;
 
 	var _styledComponents = _interopRequireDefault(__webpack_require__(21));
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	function _templateObject2() {
+	  var data = _taggedTemplateLiteral(["\n    display: block;\n"]);
+
+	  _templateObject2 = function _templateObject2() {
+	    return data;
+	  };
+
+	  return data;
+	}
+
 	function _templateObject() {
-	  var data = _taggedTemplateLiteral(["\n    background-image: url('", "');\n    background-size: cover;\n    display: flex;\n    flex-wrap: wrap;\n    align-content: flex-end;\n    width: 100%;\n    height: 100%;\n"]);
+	  var data = _taggedTemplateLiteral(["\n    position: relative;\n    display: inline-block;\n"]);
 
 	  _templateObject = function _templateObject() {
 	    return data;
@@ -29217,15 +29245,16 @@
 
 	function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-	//Made the assumption that the image should cover the container
-	var CardContainer = _styledComponents.default.div(_templateObject(), function (props) {
-	  return props.image;
-	});
+	var CardContainer = _styledComponents.default.div(_templateObject());
 
 	exports.CardContainer = CardContainer;
 
+	var TileImage = _styledComponents.default.img(_templateObject2());
+
+	exports.TileImage = TileImage;
+
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -29239,7 +29268,7 @@
 	};
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29251,8 +29280,10 @@
 
 	var _styledComponents = __webpack_require__(21);
 
+	var _globalColors = __webpack_require__(35);
+
 	function _templateObject() {
-	  var data = _taggedTemplateLiteral(["\n  body {\n    margin: 0;\n    font-family: sans-serif;\n  }\n  .app {\n    height: 100vh;\n  }\n  .container {\n      display: inline;\n  }\n"]);
+	  var data = _taggedTemplateLiteral(["\n  body {\n    margin: 0;\n    font-family: sans-serif;\n    background: ", ";\n  }\n"]);
 
 	  _templateObject = function _templateObject() {
 	    return data;
@@ -29263,7 +29294,7 @@
 
 	function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-	var _default = (0, _styledComponents.createGlobalStyle)(_templateObject());
+	var _default = (0, _styledComponents.createGlobalStyle)(_templateObject(), _globalColors.COLOUR_TERTIARY);
 
 	exports.default = _default;
 
