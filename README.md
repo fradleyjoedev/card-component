@@ -19,7 +19,7 @@ A brief overview of the approach taken during the build of the component:
 2) Added Jest and Enzyme modules for unit testing. 
 3) Set up the initial component called Card (component/card/index.jsx). Initial unit test for the component was created at the same time.
 4) Created dummy data in 'data/cardData.json' to use as a fake API to pass the data to the component.
-5) Styled the Card component using the Styled Components framework to display a background image and added a child component called TitleBanner.
+5) Styled the Card component using the Styled Components framework to display a image and added a child component called TitleBanner.
 6) Updated the Unit and snapshot tests for the Card component.
 7) Styled the TitleBanner component using the Styled Components framework to display a banner with a background image and h2 element displaying text.
 8) Updated the Unit and snapshot tests for the TitleBanner component.
