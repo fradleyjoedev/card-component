@@ -30,7 +30,7 @@ The following is a list of assumptions that I have made during the development o
 
 * It is a pure React component, so didn't use Typescript.
 * If the component was going to be re-usable the data would be pulled from an API. As I do not have an endpoint with data, I have created dummy data in 'src/data/cardData.json' to pass into the props of the component.
-* As the image was 315px x 177px I have choosen for the browser to display the image at its natural size, the banner will then scale and responed to the size of the image
+* As the image was 315px x 177px I have choosen for the browser to display the image at its natural size. As if it was bigger or to 100% of the window, large devices would cause the image to scale too much making the image pixelated. The image does respond down for small devices than orginal size of the image.
 * Made the assumption that the font was 'sans-serif'.
 
 
