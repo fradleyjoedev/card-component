@@ -38,7 +38,7 @@ The following is a list of assumptions that I have made during the development o
 
 * Pull the data from API instead of using a local JSON file
 * Making the component a link to another page.
-* Add a better image for larger devices (Could lazy load different size images)
+* Add a better image for larger devices (Could lazy load different size images or use srcset)
 * More testing could be done to ensure it is support on all devices (Mobile, Tablets etc).
 * Bundle/code split the webpack file better for performance
 * Could add image compression to ensure large images do not get passed through to the component
