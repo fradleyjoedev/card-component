@@ -22,7 +22,7 @@ The following is a list of assumtions that I have made during the development of
 ## What extra could of been done (if more time)
 
 * Pull the data from API instead of using a local JSON file
-* Making the component a link to another page. 
+* Making the component a link to another page.
 
 
 ## Build - (Local Only)
@@ -34,6 +34,5 @@ In the root directory run the following commands in a command line of your choic
 
 ## Github Pages
 
-//TODO
-Details to be added on how it can be accessed on Github Pages
+The responsive component can be found at: https://fradleyjoedev.github.io/card-component/
 
