@@ -31,6 +31,7 @@ The following is a list of assumptions that I have made during the development o
 * It is a pure React component, so didn't use Typescript.
 * If the component was going to be re-usable the data would be pulled from an API. As I do not have an endpoint with data, I have created dummy data in 'src/data/cardData.json' to pass into the props of the component.
 * The image given was only 315px x 177px so in order for the component to be responsive I have chosen to set the background-size to cover. This will stretch the image on larger displays and may cause the image to be distorted/pixelated. 
+* As the image was 315px x 177px I have choosen for the component to look the best for around that size. However the component is full responsive so can be displayed on all device sizes.
 * Made the assumption that the font was 'sans-serif'.
 
 
