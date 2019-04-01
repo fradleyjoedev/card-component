@@ -3,12 +3,15 @@ import { COLOUR_PRIMARY, COLOUR_SECONDARY } from '../../shared/globalColors';
 import { MEDIAQUERY_TABLET } from '../../shared/globalMediaQueries';
 
 export const TitleBannerContainer = styled.div`
+    position: absolute;
+    bottom: 0;
     display: flex;
     align-items: center;
     width: 100%
-    height: 20%;
+    height: 28%;
     background: ${COLOUR_SECONDARY};
-    padding: 2% 1%;
+    padding: 1rem;
+    box-sizing: border-box;
 `;
 
 export const SmallImage = styled.span`
@@ -22,11 +25,7 @@ export const SmallImage = styled.span`
 
 export const Heading = styled.h2`
     color: ${COLOUR_PRIMARY};
-    font-size: 5.2vw;
+    font-size: 2.1rem;
     width: 80%;
-    padding-left: 2%;
-
-    @media (min-width: ${MEDIAQUERY_TABLET}) {
-        font-size: 3.2vw;
-    }
+    padding-left: 1%;
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import 'jest-styled-components'
 import Card from '.';
-import { CardContainer } from './elements/cardElements';
+import { TileImage } from './elements/cardElements';
 
 describe('Card Component', () => {
   it('should render correctly with props', () => {
@@ -18,11 +18,11 @@ describe('Card Component', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('should have a background image', () => {
+  it('should have a image', () => {
     const imageURL = "image.jpg";
 
-    const component = mount(<CardContainer image={imageURL}/>);
-    
-    expect(component).toHaveStyleRule('background-image', `url('${imageURL}')`);
+    const image = mount(<TileImage src={imageURL} />);
+
+    expect(image.find("img").prop("src")).toEqual(imageURL);
   });
 });

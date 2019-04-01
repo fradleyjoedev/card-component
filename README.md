@@ -30,8 +30,7 @@ The following is a list of assumptions that I have made during the development o
 
 * It is a pure React component, so didn't use Typescript.
 * If the component was going to be re-usable the data would be pulled from an API. As I do not have an endpoint with data, I have created dummy data in 'src/data/cardData.json' to pass into the props of the component.
-* The image given was only 315px x 177px so in order for the component to be responsive I have chosen to set the background-size to cover. This will stretch the image on larger displays and may cause the image to be distorted/pixelated. 
-* As the image was 315px x 177px I have choosen for the component to look the best for around that size. However the component is full responsive so can be displayed on all device sizes.
+* As the image was 315px x 177px I have choosen for the browser to display the image at its natural size, the banner will then scale and responed to the size of the image
 * Made the assumption that the font was 'sans-serif'.
 
 
@@ -39,7 +38,7 @@ The following is a list of assumptions that I have made during the development o
 
 * Pull the data from API instead of using a local JSON file
 * Making the component a link to another page.
-* Add a better image for larger devices (Could lazy load different size images or use srcset)
+* Could lazy load different size images or use srcset, if you wanted to have different size images depending on the device.
 * More testing could be done to ensure it is support on all devices (Mobile, Tablets etc).
 * Bundle/code split the webpack file better for performance
 * Could add image compression to ensure large images do not get passed through to the component
