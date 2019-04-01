@@ -10,7 +10,7 @@ export const TitleBannerContainer = styled.div`
     width: 100%
     height: 28%;
     background: ${COLOUR_SECONDARY};
-    padding: 1rem;
+    padding: 3%;
     box-sizing: border-box;
 `;
 
@@ -25,7 +25,7 @@ export const SmallImage = styled.span`
 
 export const Heading = styled.h2`
     color: ${COLOUR_PRIMARY};
-    font-size: 2.1rem;
+    font-size: 5.1vw;
     width: 80%;
     padding-left: 1%;
 `;

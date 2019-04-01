@@ -7,4 +7,6 @@ export const CardContainer = styled.div`
 
 export const TileImage = styled.img`
     display: block;
+    width: 100%;
+    height: auto;
 `;
