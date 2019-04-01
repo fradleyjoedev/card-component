@@ -1,4 +1,5 @@
 import React from 'react';
+import { TitleBannerContainer, SmallImage, Heading } from './elements/titleBannerElements';
 
 export default class TitleBanner extends React.Component {
   constructor (props) {
@@ -6,8 +7,13 @@ export default class TitleBanner extends React.Component {
   }
 
   render() {
+    const { data } = this.props;
+
     return (
-      <h1>Card</h1> 
+      <TitleBannerContainer>
+        <SmallImage image={data.image} />
+        <Heading>{data.heading}</Heading>
+      </TitleBannerContainer> 
     );
   }
 }

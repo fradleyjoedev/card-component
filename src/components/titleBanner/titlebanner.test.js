@@ -4,7 +4,11 @@ import TitleBanner from '.';
 
 describe('TitleBanner Component', () => {
   it('should render correctly', () => {
-    const component = shallow(<TitleBanner />);
+    const json = {
+        "image": "image",
+        "heading": "test"
+    };
+    const component = shallow(<TitleBanner data={json} />);
     
     expect(component).toMatchSnapshot();
   });
