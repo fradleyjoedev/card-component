@@ -25397,7 +25397,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _templateObject3() {
-	  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 5.1vw;\n    width: 80%;\n    padding-left: 1%;\n"]);
+	  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 1em;\n    width: 80%;\n    padding-left: 1%;\n"]);
 
 	  _templateObject3 = function _templateObject3() {
 	    return data;
@@ -29204,7 +29204,11 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.MEDIAQUERY_TABLET = void 0;
+	exports.MEDIAQUERY_TABLET = exports.MEDIAQUERY_FONT_DESKTOP = exports.MEDIAQUERY_FONT_TABLET = void 0;
+	var MEDIAQUERY_FONT_TABLET = '500px';
+	exports.MEDIAQUERY_FONT_TABLET = MEDIAQUERY_FONT_TABLET;
+	var MEDIAQUERY_FONT_DESKTOP = '700px';
+	exports.MEDIAQUERY_FONT_DESKTOP = MEDIAQUERY_FONT_DESKTOP;
 	var MEDIAQUERY_TABLET = '768px';
 	exports.MEDIAQUERY_TABLET = MEDIAQUERY_TABLET;
 
@@ -29282,8 +29286,10 @@
 
 	var _globalColors = __webpack_require__(35);
 
+	var _globalMediaQueries = __webpack_require__(36);
+
 	function _templateObject() {
-	  var data = _taggedTemplateLiteral(["\n  body {\n    margin: 0;\n    font-family: sans-serif;\n    background: ", ";\n  }\n"]);
+	  var data = _taggedTemplateLiteral(["\n  body {\n    margin: 0;\n    font-family: sans-serif;\n    background: ", ";\n    font-size: 100%;\n\n    @media (min-width: ", ") {\n      font-size: 150%;\n    }\n\n    @media (min-width: ", ") {\n      font-size: 200%;\n    }\n  }\n"]);
 
 	  _templateObject = function _templateObject() {
 	    return data;
@@ -29294,7 +29300,7 @@
 
 	function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-	var _default = (0, _styledComponents.createGlobalStyle)(_templateObject(), _globalColors.COLOUR_TERTIARY);
+	var _default = (0, _styledComponents.createGlobalStyle)(_templateObject(), _globalColors.COLOUR_TERTIARY, _globalMediaQueries.MEDIAQUERY_FONT_TABLET, _globalMediaQueries.MEDIAQUERY_FONT_DESKTOP);
 
 	exports.default = _default;
 

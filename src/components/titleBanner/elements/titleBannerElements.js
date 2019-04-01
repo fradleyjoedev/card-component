@@ -25,7 +25,7 @@ export const SmallImage = styled.span`
 
 export const Heading = styled.h2`
     color: ${COLOUR_PRIMARY};
-    font-size: 5.1vw;
+    font-size: 1em;
     width: 80%;
     padding-left: 1%;
 `;
