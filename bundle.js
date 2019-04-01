@@ -29231,9 +29231,9 @@
 	"use strict";
 
 	module.exports = {
-	  "image": "/src/assets/tile.jpg",
+	  "image": "src/assets/tile.jpg",
 	  "banner": {
-	    "image": "/src/assets/logo.png",
+	    "image": "src/assets/logo.png",
 	    "heading": "Home and Away"
 	  }
 	};
