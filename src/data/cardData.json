@@ -1,7 +1,7 @@
 {
 	"image": "/src/assets/tile.jpg",
 	"banner": {
-		"image": "/src/assets/logo.jpg",
+		"image": "/src/assets/logo.png",
 		"heading": "Home and Away"
 	}
 }
