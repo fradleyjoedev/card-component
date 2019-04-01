@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { COLOUR_PRIMARY, COLOUR_SECONDARY } from '../../shared/globalColors';
+import { MEDIAQUERY_TABLET } from '../../shared/globalMediaQueries';
 
 export const TitleBannerContainer = styled.div`
     display: flex;
@@ -25,7 +26,7 @@ export const Heading = styled.h2`
     width: 80%;
     padding-left: 2%;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${MEDIAQUERY_TABLET}) {
         font-size: 3.2vw;
     }
 `;
